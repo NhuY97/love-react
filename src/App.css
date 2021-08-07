@@ -1,38 +1,158 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(59,232,218,1) 0%, rgba(45,205,204,1) 44%, rgba(16,141,167,1) 100%, rgba(174,221,231,1) 100%);
+    z-index: -1;
+    display: flex;
+    flex-wrap: nowrap;
   }
+
+
+.btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: aquamarine 3px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+  margin-top: 20px;
+  background-color: #fcb3ed;
+}
+ /* .btn:hover {
+  border:white 3px solid;
+} */
+/* .btn:hover .bar {
+  background-color: pink;
+}
+.btn:hover .icon {
+  color: pink;
+}  */
+.btn .bar {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 3px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #428d99;
+  transform-origin: center;
+  transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
+}
+.btn.pause .bar-1 {
+  transform: translateX(13.5px) translateY(0px) rotate(0deg);
+  -webkit-transform: translateX(13.5px) translateY(0px) rotate(0deg);
+  -ms-transform: translateX(13.5px) translateY(0px) rotate(0deg);
+}
+.btn.pause .bar-2 {
+  transform: translateX(24px) translateY(0px) rotate(0deg);
+  -webkit-transform: translateX(24px) translateY(0px) rotate(0deg);
+  -ms-transform: translateX(24px) translateY(0px) rotate(0deg);
+}
+.btn.play .bar-1 {
+  transform: translateX(20px) translateY(-5px) rotate(-55deg);
+  -webkit-transform: translateX(20px) translateY(-5px) rotate(-55deg);
+  -ms-transform: translateX(20px) translateY(-5px) rotate(-55deg);
+}
+.btn.play .bar-2 {
+  transform: translateX(20px) translateY(5px) rotate(-125deg);
+  -webkit-transform: translateX(20px) translateY(5px) rotate(-125deg);
+  -ms-transform: translateX(20px) translateY(5px) rotate(-125deg);
+}
+.btn .icon {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-size: large;
+  color: #428d99;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.setting-container {
+  width: 80px;
+  padding: 10px;
+  float: right;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 250px;
+  flex-direction: column;
+  z-index: 9999;
+  transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
+  min-height: 180px;
 }
 
-.App-link {
-  color: #61dafb;
+.setting-container .icon-fixed {
+  font-size: x-large;
+  position: fixed;
+  top: 20px;
+  color: pink;
+  transition: transform 0.9s ease-in-out, background 0.1s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.setting-container .icon-fixed:hover {
+  color: aqua;
+}
+
+.hidden {
+  transform: translateX(100px) translateY(0px) rotate(0deg);
+  -webkit-transform: translateX(100px) translateY(0px) rotate(0deg);
+  -ms-transform: translateX(100px) translateY(0px) rotate(0deg);
+}
+
+.hidden .icon-fixed {
+  transform: translateX(-100px) translateY(0px) rotate(0deg);
+  -webkit-transform: translateX(-100px) translateY(0px) rotate(0deg);
+  -ms-transform: translateX(-100px) translateY(0px) rotate(0deg);
+}
+
+.board-game {
+  position: relative;
+  min-width: 400px;
+  min-height:400px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  z-index: -1;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.board-game .number {
+  width: 40px;
+  height: 40px;
+}
+
+.board-game .number div {
+  border-radius: 50% 50%;
+  border: red 1px solid;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.board-game .number div:hover {
+  background-color: rgba(16,141,167,1);
+  color: #fff;
 }
