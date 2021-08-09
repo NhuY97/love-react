@@ -3,6 +3,7 @@ import ToggleBgSound from "./ToggleBgSound";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight, faAngleDoubleLeft } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from "react";
+import MenuBtn from "./MenuBtn";
 
 const SettingContainer = () => {
     const [toggleDisplay, setToggleDisplay] = useState(false);
@@ -22,6 +23,7 @@ const SettingContainer = () => {
             </div>
             <ToggleMusic />
             <ToggleBgSound />
+            <MenuBtn />
         </div>
     )
 };

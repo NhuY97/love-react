@@ -7,16 +7,19 @@ import { HashRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import SoundProvider from "./components/SoundProvider";
 import SettingContainer from './components/setting/SettingContainer';
+import { CookiesProvider } from "react-cookie";
 
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
-      <SoundProvider>
-        <Router>
-          <SettingContainer />
-          <App />
-        </Router>
-      </SoundProvider>
+      <CookiesProvider>
+        <SoundProvider>
+          <Router>
+            <SettingContainer />
+            <App />
+          </Router>
+        </SoundProvider>
+      </CookiesProvider>
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById("root")

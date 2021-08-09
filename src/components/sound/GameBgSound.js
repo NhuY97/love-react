@@ -19,7 +19,6 @@ const GameBgSound = () => {
         soundReady: true,
         playBgSound,
         pauseBgSound,
-        seek: loadedSound.seek,
       }));
     }
   }, [loadedSound, playBgSound, pauseBgSound, setSounds]);

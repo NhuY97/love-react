@@ -12,6 +12,7 @@
     z-index: -1;
     display: flex;
     flex-wrap: nowrap;
+    overflow: hidden;
   }
 
 
@@ -26,13 +27,13 @@
   margin-top: 20px;
   background-color: #fcb3ed;
 }
- /* .btn:hover {
+ /* .btn:active {
   border:white 3px solid;
 } */
-/* .btn:hover .bar {
+/* .btn:active .bar {
   background-color: pink;
 }
-.btn:hover .icon {
+.btn:active .icon {
   color: pink;
 }  */
 .btn .bar {
@@ -98,7 +99,7 @@
   transition: transform 0.9s ease-in-out, background 0.1s ease-in-out;
 }
 
-.setting-container .icon-fixed:hover {
+.setting-container .icon-fixed:active {
   color: aqua;
 }
 
@@ -152,7 +153,95 @@
                                 supported by Chrome, Edge, Opera and Firefox */
 }
 
-.board-game .number div:hover {
+.board-game .number .player1 {
+  background-color: aquamarine;
+  color: gray;
+}
+
+.board-game .number .player2 {
+  background-color: #fcb3ed;
+  color: gray;
+}
+
+.board-game .number div .current {
+  color: red;
+}
+
+.board-game .number .available:active {
   background-color: rgba(16,141,167,1);
   color: #fff;
+}
+
+.form-onboard {
+  position: relative;
+  min-width: 400px;
+  min-height:400px;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.form-onboard .user-name {
+  background-color: inherit;
+  border: none;
+  border-bottom: paleturquoise 2px solid;
+  font-size: large;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.form-onboard .btn-onboard {
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+  color: brown;
+  cursor: pointer;
+  border: #428d99 2px solid;
+  border-radius: 15px;
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+}
+
+.form-onboard .btn-onboard:active {
+  color: teal;
+  background-color: thistle;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: brown;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: brown;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: brown;
+}
+
+.form-onboard .title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: brown;
+  overflow: visible;
+}
+
+.ready-dot {
+  width: 10px;
+  height: 10px;
+  border: gray 1px solid;
+  background-color: gray;
+  border-radius: 50%;
 }
