@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/love-react/static/css/main.bc2a31b6.chunk.css",
+    "main.js": "/love-react/static/js/main.baa3b0f3.chunk.js",
+    "main.js.map": "/love-react/static/js/main.baa3b0f3.chunk.js.map",
+    "runtime-main.js": "/love-react/static/js/runtime-main.8301974e.js",
+    "runtime-main.js.map": "/love-react/static/js/runtime-main.8301974e.js.map",
+    "static/js/2.734d9eb5.chunk.js": "/love-react/static/js/2.734d9eb5.chunk.js",
+    "static/js/2.734d9eb5.chunk.js.map": "/love-react/static/js/2.734d9eb5.chunk.js.map",
+    "static/js/3.556c672d.chunk.js": "/love-react/static/js/3.556c672d.chunk.js",
+    "static/js/3.556c672d.chunk.js.map": "/love-react/static/js/3.556c672d.chunk.js.map",
+    "static/js/4.d01ab0a3.chunk.js": "/love-react/static/js/4.d01ab0a3.chunk.js",
+    "static/js/4.d01ab0a3.chunk.js.map": "/love-react/static/js/4.d01ab0a3.chunk.js.map",
+    "index.html": "/love-react/index.html",
+    "static/css/main.bc2a31b6.chunk.css.map": "/love-react/static/css/main.bc2a31b6.chunk.css.map",
+    "static/js/2.734d9eb5.chunk.js.LICENSE.txt": "/love-react/static/js/2.734d9eb5.chunk.js.LICENSE.txt",
+    "static/js/3.556c672d.chunk.js.LICENSE.txt": "/love-react/static/js/3.556c672d.chunk.js.LICENSE.txt",
+    "static/media/background.b0ffa427.mp3": "/love-react/static/media/background.b0ffa427.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8301974e.js",
+    "static/js/2.734d9eb5.chunk.js",
+    "static/css/main.bc2a31b6.chunk.css",
+    "static/js/main.baa3b0f3.chunk.js"
+  ]
+}
