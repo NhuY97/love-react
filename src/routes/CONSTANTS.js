@@ -3,7 +3,7 @@ export const Routes = {
   PLAY_GAME_PAGE: "/play/:roomId",
 }
 
-const baseUrl = "http://192.168.1.46:8080/api";
+const baseUrl = "https://lovereact2.herokuapp.com/api";
 export const API = {
   HEALTH_CHECK: `${baseUrl}/health-check`,
   USER_VERIFY: `${baseUrl}/user/verify`,
@@ -13,4 +13,4 @@ export const API = {
   GAME_QUIT: `${baseUrl}/game/quit`,
 }
 
-export const baseWs = "http://192.168.1.46:8080/ws";
+export const baseWs = "https://lovereact2.herokuapp.com/ws";
